@@ -7,7 +7,7 @@ public class Board {
 
 
         public Board(PathA a, PathB b, PathC c, PathD d, PathE e){
-                
+                a = Path();
         }
 
 }
