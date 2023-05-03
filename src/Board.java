@@ -15,7 +15,7 @@ public class Board {
         }
 
         public String toString(){
-                return (this.pathA + " " + this.pathB + " " + this.pathC + " " + this.pathD + " " + this.pathE);
+                return (this.pathA + "\n" + this.pathB + "\n" + this.pathC + "\n" + this.pathD + "\n" + this.pathE);
         }
 
 }
