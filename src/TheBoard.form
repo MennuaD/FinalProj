@@ -1,18 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="TheBoard">
-  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="true" same-size-vertically="true" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
       <xy x="0" y="59" width="1181" height="841"/>
     </constraints>
     <properties>
       <background color="-16671110"/>
-      <foreground color="-8643141"/>
+      <foreground color="-196865"/>
     </properties>
     <border type="etched" title="Main Screen" title-justification="2" title-position="1">
       <font name="Yu Gothic" size="26" style="1"/>
       <title-color color="-4516864"/>
     </border>
-    <children/>
+    <children>
+      <component id="7dad2" class="javax.swing.JButton" binding="a2PlayerButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <alignmentX value="0.0"/>
+          <text value="2 Player"/>
+        </properties>
+      </component>
+      <component id="8edb4" class="javax.swing.JButton" binding="practice1PlayerButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Practice (1 Player)"/>
+        </properties>
+      </component>
+      <component id="f5e16" class="javax.swing.JButton" binding="a3PlayerButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-8643141"/>
+          <contentAreaFilled value="true"/>
+          <text value="3 Player"/>
+          <visible value="true"/>
+        </properties>
+      </component>
+    </children>
   </grid>
 </form>
