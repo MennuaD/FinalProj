@@ -22,49 +22,35 @@ import java.awt.event.ItemListener;
 
 
 
-public class TheBoard extends JFrame implements ActionListener, ItemListener, ChangeListener {
-    private JPanel mainPanel;
-    private JButton a2PlayerButton;
-    private JButton practice1PlayerButton;
-    private JTextArea textArea1;
+public class TwoPlayer extends JFrame implements ActionListener, ItemListener, ChangeListener {
 
-    public TheBoard(){
-        this.setContentPane(mainPanel);
-        setSize(2900, 1200);
+        private JPanel namePanel;
+        private JTextField enterPlayer1STextField;
+        private JTextField enterPlayer2STextField;
+
+    public TwoPlayer(){
+        this.setContentPane(namePanel);
+        setSize(1400, 700);
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Main Page");
+        setTitle("Name Panel");
         setVisible(true);
-        a2PlayerButton.addActionListener(this);
-        practice1PlayerButton.addActionListener(this);
+       // a2PlayerButton.addActionListener(this);
+       // practice1PlayerButton.addActionListener(this);
     }
 
-    synchronized public void timer(int time){
-        try {
-            System.out.println("Waiting");
-            wait(time);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-    }
 
-    synchronized public void timeEnd(){
-        notify();
-        System.out.println("Received");
-    }
     @Override
     public void actionPerformed(ActionEvent e) {
         Object source = e.getSource();
         JButton button = (JButton) source;
         String text = button.getText();
-        if(text.equals("2 Player")){
+        /*if(text.equals("2 Player")){
             textArea1.setText("2 player selected!");
-            timer(10);
-            this.dispose();
             TwoPlayer gui = new TwoPlayer();
         }
         if(text.equals("Practice (1 Player)")){
             textArea1.setText("Practice(1 Player) selected!");
-        }
+        }*/
     }
 
     @Override
