@@ -38,10 +38,11 @@ public class TheBoard extends JFrame implements ActionListener, ItemListener, Ch
         practice1PlayerButton.addActionListener(this);
     }
 
-    synchronized public void timer(int time){
+    synchronized public void timer(int seconds){
         try {
             System.out.println("Waiting");
-            wait(time);
+            wait(seconds * 1000);
+            System.out.println("Received");
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -49,7 +50,7 @@ public class TheBoard extends JFrame implements ActionListener, ItemListener, Ch
 
     synchronized public void timeEnd(){
         notify();
-        System.out.println("Received");
+
     }
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -58,7 +59,7 @@ public class TheBoard extends JFrame implements ActionListener, ItemListener, Ch
         String text = button.getText();
         if(text.equals("2 Player")){
             textArea1.setText("2 player selected!");
-            timer(10);
+            timer(3);
             this.dispose();
             TwoPlayer gui = new TwoPlayer();
         }

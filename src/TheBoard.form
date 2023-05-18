@@ -37,7 +37,7 @@
       </component>
       <vspacer id="55a5a">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
       <component id="7dad2" class="javax.swing.JButton" binding="a2PlayerButton" default-binding="true">
@@ -53,18 +53,11 @@
           <text value="2 Player"/>
         </properties>
       </component>
-      <component id="ff27f" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
+      <vspacer id="daaf6">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
-          </grid>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties>
-          <background color="-16671110"/>
-          <foreground color="-4521713"/>
-          <selectedTextColor color="-4521713"/>
-        </properties>
-      </component>
+      </vspacer>
     </children>
   </grid>
 </form>

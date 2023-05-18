@@ -27,6 +27,8 @@ public class TwoPlayer extends JFrame implements ActionListener, ItemListener, C
         private JPanel namePanel;
         private JTextField enterPlayer1STextField;
         private JTextField enterPlayer2STextField;
+    private JButton button1;
+    private JButton button2;
 
     public TwoPlayer(){
         this.setContentPane(namePanel);
