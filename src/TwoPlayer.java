@@ -1,20 +1,6 @@
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JTextArea;
-import javax.swing.WindowConstants;
-import javax.swing.JCheckBox;
-import javax.swing.JLabel;
-import javax.swing.JMenuBar;
-import javax.swing.JMenu;
-import javax.swing.JMenuItem;
-import javax.swing.JSlider;
-import javax.swing.JTextField;
+import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import java.awt.Font;
-import java.awt.BorderLayout;
-import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
@@ -27,8 +13,10 @@ public class TwoPlayer extends JFrame implements ActionListener, ItemListener, C
         private JPanel namePanel;
         private JTextField enterPlayer1STextField;
         private JTextField enterPlayer2STextField;
-    private JButton button1;
-    private JButton button2;
+    private JButton player1ReadyButton;
+    private JButton player2ReadyButton;
+    private JCheckBox checkBox1;
+    private JCheckBox checkBox2;
 
     public TwoPlayer(){
         this.setContentPane(namePanel);

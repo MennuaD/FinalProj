@@ -26,7 +26,6 @@ public class TheBoard extends JFrame implements ActionListener, ItemListener, Ch
     private JPanel mainPanel;
     private JButton a2PlayerButton;
     private JButton practice1PlayerButton;
-    private JTextArea textArea1;
 
     public TheBoard(){
         this.setContentPane(mainPanel);
@@ -58,13 +57,12 @@ public class TheBoard extends JFrame implements ActionListener, ItemListener, Ch
         JButton button = (JButton) source;
         String text = button.getText();
         if(text.equals("2 Player")){
-            textArea1.setText("2 player selected!");
             timer(3);
             this.dispose();
             TwoPlayer gui = new TwoPlayer();
         }
         if(text.equals("Practice (1 Player)")){
-            textArea1.setText("Practice(1 Player) selected!");
+
         }
     }
 
