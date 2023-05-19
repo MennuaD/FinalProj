@@ -16,7 +16,7 @@ public class TwoPlayer extends JFrame implements ActionListener, ItemListener, C
     private JButton player1ReadyButton;
     private JButton player2ReadyButton;
     private JCheckBox checkBox1;
-    private JCheckBox checkBox2;
+    private JPanel checkBox2;
 
     public TwoPlayer(){
         this.setContentPane(namePanel);
