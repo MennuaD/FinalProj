@@ -128,6 +128,7 @@
                   <background color="-16671110"/>
                   <contentAreaFilled value="true"/>
                   <enabled value="true"/>
+                  <opaque value="true"/>
                   <selected value="false"/>
                   <text value=""/>
                   <visible value="true"/>
