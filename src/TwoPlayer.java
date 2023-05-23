@@ -17,15 +17,26 @@ public class TwoPlayer extends JFrame implements ActionListener, ItemListener, C
     private JButton player2ReadyButton;
     private JCheckBox checkBox1;
     private JPanel checkBox2;
+    private JLabel Yuuki;
 
-    public TwoPlayer(){
+    private JLabel jLabel;
+
+    static int condition = 1;
+
+    private Images use = new Images();
+
+    private ImageIcon yuukiUp = use.getYuukiUp();
+
+    private ImageIcon yuukiDown = use.getYuukiDown();
+
+    public TwoPlayer() {
         this.setContentPane(namePanel);
         setSize(1400, 700);
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Name Panel");
         setVisible(true);
-       // a2PlayerButton.addActionListener(this);
-       // practice1PlayerButton.addActionListener(this);
+        player1ReadyButton.addActionListener(this);
+
     }
 
 
@@ -34,13 +45,16 @@ public class TwoPlayer extends JFrame implements ActionListener, ItemListener, C
         Object source = e.getSource();
         JButton button = (JButton) source;
         String text = button.getText();
-        /*if(text.equals("2 Player")){
-            textArea1.setText("2 player selected!");
-            TwoPlayer gui = new TwoPlayer();
+        if (text.equals("Player1 Ready")){
+
+         if (condition == 1){
+             Yuuki.setIcon(yuukiDown);
+             condition = 2;
+         } else if (condition == 2) {
+             Yuuki.setIcon(yuukiUp);
+             condition = 1;
+         }
         }
-        if(text.equals("Practice (1 Player)")){
-            textArea1.setText("Practice(1 Player) selected!");
-        }*/
     }
 
     @Override
