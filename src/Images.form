@@ -15,7 +15,7 @@
         <properties>
           <icon value="pixil-frame-0.png"/>
           <text value=""/>
-          <visible value="false"/>
+          <visible value="true"/>
         </properties>
       </component>
       <component id="90ce2" class="javax.swing.JLabel" binding="YuukiDown">
@@ -25,7 +25,7 @@
         <properties>
           <icon value="pixil-frame-0 (1).png"/>
           <text value=""/>
-          <visible value="false"/>
+          <visible value="true"/>
         </properties>
       </component>
     </children>

@@ -1,11 +1,13 @@
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
-
+import java.awt.image.ImageObserver;
+import java.awt.image.ImageProducer;
 
 
 public class TwoPlayer extends JFrame implements ActionListener, ItemListener, ChangeListener {
@@ -28,6 +30,11 @@ public class TwoPlayer extends JFrame implements ActionListener, ItemListener, C
     private ImageIcon yuukiUp = use.getYuukiUp();
 
     private ImageIcon yuukiDown = use.getYuukiDown();
+
+    private Image YuukiUp = yuukiUp.getImage();
+
+    private Image YuukiDown = yuukiDown.getImage();
+
 
     public TwoPlayer() {
         this.setContentPane(namePanel);
