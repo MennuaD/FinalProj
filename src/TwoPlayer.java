@@ -60,6 +60,7 @@ public class TwoPlayer extends JFrame implements ActionListener, ItemListener, C
          } else if (condition == 2) {
              Yuuki.setIcon(yuukiUp);
              condition = 1;
+             TimeToPlay gui = new TimeToPlay();
          }
         }
     }

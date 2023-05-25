@@ -1,5 +1,6 @@
+import java.awt.*;
 import java.util.Scanner;
-public class BoardGame {
+public class BoardGame extends Canvas {
     public static void main(String[] args) {
         Scanner r = new Scanner(System.in);
         System.out.println("Would you like a medium or large map? Type (m) for medium or (l) for large.");
