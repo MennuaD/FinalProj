@@ -12,8 +12,11 @@ import java.awt.event.ItemListener;
 public class TimeToPlay extends JFrame implements ActionListener, ItemListener, ChangeListener {
     private JPanel board;
     private JScrollPane scroll;
+    private JButton draww;
 
     private TheBoard use = new TheBoard();
+
+    BoardGame m = new BoardGame();
 
     public TimeToPlay() {
         setContentPane(scroll);
@@ -21,10 +24,21 @@ public class TimeToPlay extends JFrame implements ActionListener, ItemListener, 
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Board");
         setVisible(true);
-        Graphics g = null;
-        for (int i = 0; i <= 12000; i += 100){
-            g.drawLine(0, i, 1500, i + 10);
-        }
+        draww.addActionListener(this);
+
+    }
+    public void paint(Graphics g, int x, int y, int alpha) {
+        super.paint(g);
+
+        g.setColor(Color.RED);
+        g.drawLine(0, 30, 350, 30);
+
+        g.setColor(Color.BLUE);
+        g.drawRect(200, 100, 450, 250);
+        g.drawString("x = 10 cm", 400, 90);
+        g.drawString("y = 2 cm", 670, 200);
+        //g.drawLine(200, 350, 450, 250);
+        g.drawArc(200, 350, x, y, alpha, 70);
     }
 
 
@@ -45,4 +59,7 @@ public class TimeToPlay extends JFrame implements ActionListener, ItemListener, 
     public void stateChanged(ChangeEvent e) {
 
     }
+
+
+
 }
