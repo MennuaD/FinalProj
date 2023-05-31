@@ -6,19 +6,16 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
-import java.awt.image.ImageObserver;
-import java.awt.image.ImageProducer;
 
 
-public class TwoPlayer extends JFrame implements ActionListener, ItemListener, ChangeListener {
+public class OnePlayer extends JFrame implements ActionListener, ItemListener, ChangeListener {
 
         private JPanel namePanel;
         private JTextField enterPlayer1STextField;
-        private JTextField enterPlayer2STextField;
     private JButton player1ReadyButton;
-    private JButton player2ReadyButton;
-    private JCheckBox checkBox1;
+    private JCheckBox readyBox;
     private JPanel checkBox2;
+    private JLabel character;
     private JLabel Yuuki;
 
     private JLabel jLabel;
@@ -36,7 +33,7 @@ public class TwoPlayer extends JFrame implements ActionListener, ItemListener, C
     private Image YuukiDown = yuukiDown.getImage();
 
 
-    public TwoPlayer() {
+    public OnePlayer() {
         this.setContentPane(namePanel);
         setSize(1400, 700);
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
